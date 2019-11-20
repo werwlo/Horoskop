@@ -8,5 +8,6 @@ urlpatterns = [
     url('^$', views.home, name='home'),
     url('about/', views.about, name='about'),
     url('contact/', views.contact, name='contact'),
-    url('koziorozec/', views.koziorozec, name='koziorozec')
+    url('koziorozec/', views.koziorozec, name='koziorozec'),
+    url('wodnik/', views.wodnik, name='wodnik'),
     ]
