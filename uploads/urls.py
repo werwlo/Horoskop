@@ -11,7 +11,9 @@ urlpatterns = [
     url('koziorozec/', views.koziorozec, name='koziorozec'),
     url('wodnik/', views.wodnik, name='wodnik'),
     url('ryby/', views.ryby, name='ryby'),
-    url('baran/', views.baran, name='baran'),    
+    url('baran/', views.baran, name='baran'),
+    url('byk/', views.byk, name='byk'),
+    
 
 
 
