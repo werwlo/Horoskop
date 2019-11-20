@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>HOROSKOP</h1>
+
+    <p>Witaj! Czy jesteś ciekawy, jak potoczy się Twoja przyszłość?<br>
+    Twój los jest zapisany w gwiazdach. Aby skorzystać ze spersonalizowanego horoskopu, podaj swoją datę urodzenia.</p>
+
+    <form name="form" method="post" action="">
+        {% csrf_token %}
+        <input type="radio" name="url" value="koziorozec" /> Koziorożec<br>
+        <input type="radio" name="url" value="wodnik" /> Wodnik<br>
+        <input type="radio" name="url" value="ryby" /> Ryby<br>
+        <input type="radio" name="url" value="baran" /> Baran<br>
+        <input type="radio" name="url" value="byk" /> Byk<br>
+        <input type="radio" name="url" value="bliznieta" /> Bliźnięta<br>
+        <input type="radio" name="url" value="rak" /> Rak<br>
+        <input type="radio" name="url" value="lew" /> Lew<br>
+        <input type="radio" name="url" value="panna" /> Panna<br>
+        <input type="radio" name="url" value="waga" /> Waga<br>
+        <input type="radio" name="url" value="skorpion" /> Skorpion<br>
+        <input type="radio" name="url" value="strzelec" /> Strzelec<br>
+        <input type="submit" value="Sprawdź horoskop">
+    </form>
+
+    </html>
+{% endblock %}
