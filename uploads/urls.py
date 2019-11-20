@@ -13,6 +13,7 @@ urlpatterns = [
     url('ryby/', views.ryby, name='ryby'),
     url('baran/', views.baran, name='baran'),
     url('byk/', views.byk, name='byk'),
+    url('bliznieta/', views.bliznieta, name='bliznieta'),
     
 
 
