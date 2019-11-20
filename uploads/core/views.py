@@ -46,6 +46,14 @@ def lew(request):
     print('Lew')
     return render(request, 'lew.html')
 
+def panna(request):
+    print('Panna')
+    return render(request, 'panna.html')
+
+def waga(request):
+    print('Waga')
+    return render(request, 'waga.html')
+
 
 
 
