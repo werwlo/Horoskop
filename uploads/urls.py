@@ -14,6 +14,8 @@ urlpatterns = [
     url('baran/', views.baran, name='baran'),
     url('byk/', views.byk, name='byk'),
     url('bliznieta/', views.bliznieta, name='bliznieta'),
+    url('rak/', views.rak, name='rak'),
+    
     
 
 
