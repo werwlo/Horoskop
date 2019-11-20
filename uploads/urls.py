@@ -20,11 +20,4 @@ urlpatterns = [
     url('waga/', views.waga, name='waga'),
     url('skorpion/', views.skorpion, name='skorpion'),
     url('strzelec/', views.strzelec, name='strzelec'),
-
-    
-    
-    
-
-
-
 ]
