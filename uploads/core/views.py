@@ -34,6 +34,20 @@ def byk(request):
     print('Byk')
     return render(request, 'byk.html')
 
+def bliznieta(request):
+    print('Bliźnięta')
+    return render(request, 'bliznieta.html')
+
+def rak(request):
+    print('Rak')
+    return render(request, 'rak.html')
+
+def lew(request):
+    print('Lew')
+    return render(request, 'lew.html')
+
+
+
 
 
 
