@@ -10,5 +10,9 @@ urlpatterns = [
     url('contact/', views.contact, name='contact'),
     url('koziorozec/', views.koziorozec, name='koziorozec'),
     url('wodnik/', views.wodnik, name='wodnik'),
-     url('ryby/', views.ryby, name='ryby'),
-    ]
+    url('ryby/', views.ryby, name='ryby'),
+    url('baran/', views.baran, name='baran'),    
+
+
+
+]
