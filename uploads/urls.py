@@ -15,6 +15,13 @@ urlpatterns = [
     url('byk/', views.byk, name='byk'),
     url('bliznieta/', views.bliznieta, name='bliznieta'),
     url('rak/', views.rak, name='rak'),
+    url('lew/', views.lew, name='lew'),
+    url('panna/', views.panna, name='panna'),
+    url('waga/', views.waga, name='waga'),
+    url('skorpion/', views.skorpion, name='skorpion'),
+    url('strzelec/', views.strzelec, name='strzelec'),
+
+    
     
     
 
