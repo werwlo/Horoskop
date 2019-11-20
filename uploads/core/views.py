@@ -54,6 +54,18 @@ def waga(request):
     print('Waga')
     return render(request, 'waga.html')
 
+def skorpion(request):
+    print('Skorpion')
+    return render(request, 'skorpion.html')
+
+def strzelec(request):
+    print('Strzelec')
+    return render(request, 'strzelec.html')
+
+def koziorozec(request):
+    print('Koziorożec')
+    return render(request, 'koziorozec.html')
+
 
 
 
