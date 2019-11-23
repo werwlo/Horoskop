@@ -1,7 +1,42 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>PANNA</h1>
+  <p><b>22/23 VIII - 22/23 IX</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="panna.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/panna.jpg" %}" alt="panna" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Dla osoby urodzonej pod znakiem Panny</b><br>
+    poglądy są rzeczywistością. W żadnym innym znaku zodiaku nie jest to tak mocno zarysowane.<br>
+    Według Panny to, o czym jest przekonana, wydarzy się z całą pewnością. Jeśli więc będzie pewna swojej porażki, poniesie ją.<br>
+    Jeśli jednak Panna jest pozytywnie do czegoś nastawiona, prawie na pewno osiągnie sukces. Umysł Panny jest bardzo silny. Dlatego jej postawa ma tak ogromny wpływ na życie.<br>
+    To, czy będzie szczęśliwe i udane, zależy w głównej mierze od tego, w co Panna wierzy.
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnej Panny</b><br>
+      <b>Zalety:</b> efektywna, uważna, wnikliwa.<br>
+      <b>Wady:</b> krytyczna, pedantyczna, nietolerancyjna.<br> </p>
+
+
+
 {% endblock %}
+
