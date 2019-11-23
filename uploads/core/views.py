@@ -68,11 +68,8 @@ def koziorozec(request):
 
 
 
-
-
-
 def home(request):
-    print('Data analysis')
+    print('Horoskop')
     if request.method == 'POST':
 
         zodiac = request.POST.get('url')
