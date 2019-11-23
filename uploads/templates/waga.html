@@ -1,7 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>WAGA</h1>
+  <p><b>22/23 IX - 22/23 X</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="waga.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/waga.jpg" %}" alt="waga" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Osoby urodzone pod znakiem Wagi</b><br>
+      mają doskonałą intuicję, choć przez większość czasu nie ufają jej wystarczająco.<br>
+      To błąd, gdyż mogłyby uniknąć wielu kłopotów, gdyby tylko wsłuchały się w ten cichy głos w swoim wnętrzu.<br>
+      Zodiakalna Waga prawdopodobnie mogłaby osiągnąć w życiu więcej, ale ze względu na luźne podejście do swoich obowiązków nie zawsze realizuje swój pełny potencjał.<br>
+      To nie znaczy, że jest leniwa, po prostu nie pragnie niczego dość mocno, by o to walczyć. Jedynie w przypadku doznania niesprawiedliwości Waga będzie zaciekle broniła swojego stanowiska.
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnej Wagi</b><br>
+      <b>Zalety:</b> dyplomatyczna, pełna wdzięku, pokojowo nastawiona, idealistyczna, gościnna.<br>
+      <b>Wady:</b> nie można na niej polegać, próżna, niezdecydowana, powierzchowna, egoistyczna.<br> </p>
+
+
+
 {% endblock %}
