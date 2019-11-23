@@ -8,25 +8,32 @@
   </head>
   <body>
     <header>
-      <nav>
-          <ul>
-              <li><a href="{% url 'home' %}">Strona główna</a></li>
-              <li><a href="{% url 'about' %}">O astrologii</a></li>
-              <li><a href="{% url 'contact' %}">Kontakt</a></li>
-              <li><a href="{% url 'koziorozec' %}">Koziorożec</a></li>
-              <li><a href="{% url 'wodnik' %}">Wodnik</a></li>
-              <li><a href="{% url 'ryby' %}">Ryby</a></li>
-              <li><a href="{% url 'baran' %}">Baran</a></li>
-              <li><a href="{% url 'byk' %}">Byk</a></li>
-              <li><a href="{% url 'bliznieta' %}">Bliźnięta</a></li>
-              <li><a href="{% url 'rak' %}">Rak</a></li>
-              <li><a href="{% url 'lew' %}">Lew</a></li>
-              <li><a href="{% url 'panna' %}">Panna</a></li>
-              <li><a href="{% url 'waga' %}">Waga</a></li>
-              <li><a href="{% url 'skorpion' %}">Skorpion</a></li>
-              <li><a href="{% url 'strzelec' %}">Strzelec</a></li>
-          </ul>
-      </nav>
+      <div class="navbar">
+        <div class="navbar-centered">
+        <a href="{% url 'home' %}">Strona główna</a>
+        <a href="{% url 'about' %}">O astrologii</a>
+        <div class="dropdown">
+          <button class="dropbtn">Znaki zodiaku
+            <i class="fa fa-caret-down"></i>
+          </button>
+        <div class="dropdown-content">
+          <li><a href="{% url 'koziorozec' %}">Koziorożec</a></li>
+          <li><a href="{% url 'wodnik' %}">Wodnik</a></li>
+          <li><a href="{% url 'ryby' %}">Ryby</a></li>
+          <li><a href="{% url 'baran' %}">Baran</a></li>
+          <li><a href="{% url 'byk' %}">Byk</a></li>
+          <li><a href="{% url 'bliznieta' %}">Bliźnięta</a></li>
+          <li><a href="{% url 'rak' %}">Rak</a></li>
+          <li><a href="{% url 'lew' %}">Lew</a></li>
+          <li><a href="{% url 'panna' %}">Panna</a></li>
+          <li><a href="{% url 'waga' %}">Waga</a></li>
+          <li><a href="{% url 'skorpion' %}">Skorpion</a></li>
+          <li><a href="{% url 'strzelec' %}">Strzelec</a></li>
+        </div>
+        </div>
+        <a href="{% url 'contact' %}">Kontakt</a>
+      </div>
+    </div>
     </header>
     {% block content %}
     {% endblock %}
