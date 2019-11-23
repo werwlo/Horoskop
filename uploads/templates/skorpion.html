@@ -1,7 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>SKORPION</h1>
+  <p><b>22/23 X - 21/22 XI</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="skorpion.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/skorpion.jpg" %}" alt="skorpion" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Zodiakalny Skorpion</b><br>
+      Skorpion to najbardziej tajemniczy ze wszystkich znaków w astrologii.<br>
+      Jest pełen sprzeczności, a jego wewnętrzne przeżycia są bardzo intensywne. Ma silną psychikę, można nawet powiedzieć, że posiada prawdziwą duchową moc.<br>
+      Lubi mieć świadomość aktualnej sytuacji i zawsze wie, co się dookoła niego dzieje. Orientuje się w otoczeniu dzięki umiejętności sondowania umysłów napotykanych ludzi.<br>
+      Posiada ogromną, bardzo silną intuicję i zdaje się w naturalny sposób rozumieć sekrety i potęgę ludzkiego umysłu.<br>
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnego Skorpiona</b><br>
+      <b>Zalety:</b> odważny, skrupulatny, wnikliwy, analityczny, nieustępliwy, posiada zdolność psychicznej regeneracji, lojalny, namiętny, zaradny, spostrzegawczy, dynamiczny.<br>
+      <b>Wady:</b> pamiętliwy, mściwy, władczy, skrajny i bezkompromisowy, zazdrosny, obsesyjny, podejrzliwy, niepokorny.<br> </p>
+
+
+
 {% endblock %}
