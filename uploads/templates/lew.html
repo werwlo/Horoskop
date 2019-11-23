@@ -1,7 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>LEW</h1>
+  <p><b>22/23 VII - 22/23 VIII</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="lew.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/lew.jpg" %}" alt="lew" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Osoba urodzona pod tym znakiem to prawdziwy lew </b><br>
+     – król dżungli. To zwierzę jest naprawdę rewelacyjnym symbolem przedstawiającym osobowość tego człowieka.<br>
+     Jest on panem na włościach i bardzo troskliwie opiekuje się tym, co uznaje za swoje królestwo.<br>
+     Lew jest przez swoje otoczenie zazwyczaj wysoko ceniony. Jest honorowy i bardzo pewny siebie. Ma wysokie poczucie własnej wartości.<br>
+     Lew jest zawsze w centrum uwagi i stara się utrzymać swój dobry wizerunek. Cieszy go pławienie się w świetle reflektorów.
+     <br>  <br>
+
+    <b>Cechy charakteru Lwa</b><br>
+      <b>Zalety:</b> pewny siebie, ambitny, hojny, lojalny, zachęcający, optymistyczny, posiada wyśmienite zdolności organizacyjne.<br>
+      <b>Wady:</b> pretensjonalny, apodyktyczny, melodramatyczny, uparty, próżny, egoistyczny.<br> </p>
+
+
+
 {% endblock %}
