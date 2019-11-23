@@ -1,7 +1,40 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>BYK</h1>
+  <p><b>19/20 IV - 20/21 V</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="byk.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/byk.jpg" %}" alt="byk" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Zodiakalny Byk</b><br>
+     W swoich poglądach i upodobaniach jest niezwykle stały. Trudno przekonać go do zmiany zdania, kiedy już do czegoś się przyzwyczai.<br>
+     Byk znany jest ze swojego uporu. Zodiakalny Byk lubi wygodę oraz zmysłowe przyjemności. Człowiek urodzony pod tym znakiem jest zazwyczaj rzeczowy i praktyczny.<br>
+    Charakteryzuje się powolnością w działaniu, wytrwałością i cierpliwością.
+     <br>  <br>
+
+    <b>Cechy charakteru Byków</b><br>
+      <b>Zalety:</b>niezawodny, wytrwały, lojalny, cierpliwy, hojny.<br>
+      <b>Wady:</b>uparty, leniwy, zaborczy, materialistyczny.<br> </p>
+
+
+
 {% endblock %}
