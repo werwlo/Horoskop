@@ -1,79 +1,85 @@
-h1
+h1 /*nagłówek*/
 {
-  text-align: center;
+
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px 14px;
+  width: 30%;
   font-style: italic;
   font-family: "Bookman Old Style";
   font-size: 40px;
-  color: #3C004A;
-  background-color:#FFFFFF;
+  color: white;
+  background-color: black;
 }
 
 body
 {
-  background-image: url("/static/img/stars.jpg");
+  background-image: url("/static/img/stars02.jpg");
 }
 
-p
+p /*treść strony*/
 {
+  width: 60%;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 7px;
+    padding: 14px 14px;
+  font-style: italic;
+  font-family: "Bookman Old Style";
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+
+input[type=submit] /*przycisk submit*/
+{
+  color: white;
+  padding: 12px 25px;
+  margin: auto;
+  position: relative;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
   text-align: center;
   font-style: italic;
   font-family: "Bookman Old Style";
-  font-size: 15px;
-  color: #3C004A;
-  background-color:#FFFFFF; }
-
-input[type=file], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
   font-size: 20px;
+  background-color: #B8860B;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #002395;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 20px;
+input[type=submit]:hover /*przycisk submit po najechaniu kursorem*/
+{
+  background-color: white;
+  color: black;
 }
 
-input[type=submit]:hover {
-  background-color: #72bcd4;
-}
 
-/* Menu */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f324;
-}
-
-nav ul li {
-  float: left;
-}
-
-nav ul li a {
+form /*edycja zawartości formularza*/
+{
+  float: center;
   display: block;
-  color: #666;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  border-radius: 7px;
+
+  padding: 14px 14px;
+  width: 30%;
+  font-style: italic;
+  font-family: "Bookman Old Style";
+  font-size: 22px;
+  color: white;
+  background-color: #000000;
 }
 
-nav ul li a:hover:not(.active) {
-  background-color: #ddd;
-}
 
 /* Tables */
 td, th {
@@ -92,3 +98,85 @@ th {
   background-color: #002395;
   color: white;
 }
+
+/* PASEK MENU */
+ .navbar {
+  width:100%;
+  float: center;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+  background-color: black;
+  font-style: italic;
+  border: 2px solid #B8860B;
+  border-radius: 7px;
+  font-family: "Bookman Old Style";
+}
+
+/* Links inside the navbar */
+ .navbar a {
+
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  list-style: none;
+  font-style: italic;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn /*kolor po najechaniu myszką*/ {
+  background-color: #B8860B;
+}
+
+/* zawartość listy rozwijalnej (domyślnie jest ukryta) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: center;
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  position: relative;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
