@@ -1,7 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>BARAN</h1>
+  <p><b>20/21 III - 19/20 IV</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="baran.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/baran.jpg" %}" alt="baran" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Człowiek spod znaku Barana jest</b><br>
+    inteligentny, odważny i pewny siebie. Cechuje go szlachetny charakter, dlatego jest godny zaufania.<br>
+    Do tego dysponuje doskonałą, niemal fotograficzną pamięcią, która obok sukcesów może także przysporzyć kłopotów.
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnych Baranów</b><br>
+      <b>Zalety:</b>niezależny, hojny, optymistyczny, entuzjastyczny, odważny.<br>
+      <b>Wady:</b>nieokrzesany, humorzasty, za bardzo skupiony na samym sobie, impulsywny, niecierpliwy, naiwny.<br> </p>
+
+
+
 {% endblock %}
