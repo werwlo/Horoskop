@@ -1,7 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>RAK</h1>
+  <p><b>20/21 VI - 22/23 VII</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="rak.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/rak.jpg" %}" alt="rak" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Osobowość Raka jest</b><br>
+    często bardzo trudna do zrozumienia. Miewa on bardzo zmienne nastroje i czasami nie jest łatwo mu dogodzić.<br>
+    W jednej chwili potrafi być w pełni zadowolony z życia, by w następnej popaść w wisielczy nastrój i martwić się Bóg wie czym.<br>
+    Rak to znak pełen sprzeczności i tajemniczości. Z jednej strony, jest wytrwały w dążeniu do tego, na czym mu zależy; do tego samowystarczalny i nie musi polegać na innych.<br>
+    Z drugiej strony, łatwo uzależnia się od emocjonalnego wsparcia i pomocy bliskich osób.
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnych Raków</b><br>
+      <b>Zalety:</b> lojalny, niezawodny, troskliwy, wrażliwy.<br>
+      <b>Wady:</b> skoncentrowany na sobie, humorzasty, użalający się nad sobą, przewrażliwiony, za bardzo przywiązujący się (np. do drugiej osoby).<br> </p>
+
+
+
 {% endblock %}
