@@ -1,7 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>RYBY</h1>
+  <p><b>18/19 II - 20/21 III</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="ryby.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/ryby.jpg" %}" alt="ryby" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+      <p><b>Osoba urodzona pod znakiem Ryb</b><br>
+     bardzo dobrze rozumie ludzi, ponieważ posiada umiejętność zagłębiania się w ludzką psychikę i dostrzegania tego, co daną osobę napędza.<br>
+     Ryby to znak mistycyzmu, tajemniczości oraz rozwoju duchowego. Żyją w dwóch światach: materialnym i duchowym.<br>
+     Dzieje się tak, ponieważ chcą uniknąć bólu i cierpienia realnego świata. Mają ogromnie silną intuicję.<br>
+     <br>  <br>
+
+    <b>Cechy charakteru zodiakalnych Ryb</b><br>
+      <b>Zalety:</b>intuicja, instynkt, wyobraźnia, są gotowe do wielkiego poświęcenia, współczujące, tolerancyjne, oddane.<br>
+      <b>Wady:</b>zmienne, nadwrażliwe, nie radzą sobie z emocjami, mają skłonność do popadania w nałogi, użalają się nad sobą, leniwe.<br> </p>
+
+
+
 {% endblock %}
+
