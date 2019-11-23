@@ -1,7 +1,40 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>STRZELEC</h1>
+  <p><b>21/22 XI - 21/22 XII</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="strzelec.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/strzelec.jpg" %}" alt="strzelec" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+    <p><b>Zodiakalny Strzelec</b><br>
+  Strzelec jest po prostu dobrym człowiekiem – bez emocjonalnych problemów, które mogłyby go hamować. Pragnie poznawać świat i szybko dostosowuje się do zmieniającej sytuacji
+  Strzelec ma często problemy z kończeniem spraw, które rozpoczął. Jeśli coś trwa zbyt długo, zaczyna go nudzić i męczyć. Woli widzieć natychmiastowe efekty swoich działań.<br>
+  Znudzony, szybko przechodzi do następnego projektu, poprzedni pozostawiając w rozsypce. Nuda wręcz przeraża Strzelca, więc zamiast stawić czoła rutynie, będzie poszukiwał czegoś bardziej stymulującego.
+   <br>  <br>
+
+  <b>Cechy charakteru zodiakalnego Strzelca</b><br>
+    <b>Zalety:</b> otwarty na świat, liberalny, pozytywnie nastawiony, entuzjastyczny, wesoły, bezpośredni, spontaniczny i energiczny.<br>
+    <b>Wady:</b> przemądrzały, pozer, obłudny, świętoszkowaty, nieczuły.<br> </p>
+
+
 {% endblock %}
+
