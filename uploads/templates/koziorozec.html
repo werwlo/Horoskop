@@ -1,7 +1,42 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>KOZIOROŻEC</h1>
+    <p><b>20/21 XII - 19/20 I</b></p>
+    
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="koziorozec.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/koziorozec.jpg" %}" alt="koziorozec" style="width:15%;">
+    </body>
+    </html>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+    </html>
+
+
+      <p><b>Zodiakalny Koziorożec jest</b><br>
+   realistą, który nigdy nie buja w obłokach, jest zasadniczy w swoich poglądach i dość powściągliwym w okazywaniu uczuć. <br>
+  To osoba miła, uczynna i uprzejma. Koziorożec ma bardzo aktywny umysł i zdolność głębokiej koncentracji. <br>
+  Stara się kontrolować wszystko i wszystkich w swoim otoczeniu.
+     <br>  <br>
+
+    <b>Cechy charakteru Koziorożca</b><br>
+      <b>Zalety:</b> zdyscyplinowany, cierpliwy, zorientowany na cel, odpowiedzialny, praktyczny, dojrzały, konsekwentny.<br>
+      <b>Wady:</b> wymagający, za wszelką cenę dąży do sukcesu, nie umie się bawić, przywiązuje zbytnią wagę do opinii innych.<br> </p>
+
+
+
 {% endblock %}
+
