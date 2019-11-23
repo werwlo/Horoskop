@@ -1,7 +1,42 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <h1>WODNIK</h1>
+    <p><b>19/20 I - 18/19 II</b></p>
 
-    <p>Tutaj się coś będzie wyświetlać (albo i nie)</p>
+      <!DOCTYPE html>
+      <!-- dodaję wyśrodkowaną fote -->
+    <html>
+    <head>
+    <meta name="wodnik.jpg" content="width=device-width, initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    </head>
+    <body>
+    <img src="{% static "img/wodnik.jpg" %}" alt="wodnik" style="width:15%;">
+    </body>
+    </html>
+
+    </html>
+
+
+      <p><b>Wodnik to znak wizjonerów,</b><br>
+   niekonwencjonalnej myśli i niezależności intelektualnej. <br>
+   Człowiek urodzony pod tym znakiem odbiega od reszty ludzkości i idzie własną drogą. <br>
+   Ciągle odkrywa coś nowego, tworząc nowe idee, i uparcie kroczy swoją drogą niezależnie od tego, co myślą inni.
+     <br>  <br>
+
+    <b>Cechy charakteru Wodnika</b><br>
+      <b>Zalety:</b> Dla Wodnika nie istnieją żadne granice. Jest niezależnym myślicielem, dla którego najważniejsze są idee związane z humanitaryzmem. <br>
+      Jest typem wynalazcy zafascynowanego odkrywaniem tajemnic wszechświata.<br>
+      <b>Wady:</b> wymagający, za wszelką cenę dąży do sukcesu, nie umie się bawić, przywiązuje zbytnią wagę do opinii innych.<br> </p>
+
+
+
 {% endblock %}
