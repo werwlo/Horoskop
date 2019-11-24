@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
     <h1>O ASTROLOGII</h1>
-
+    <!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <meta name="astrologia.jpg" content="width=device-width, initial-scale=1">
+  <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+  <body>
+  <img src="{% static "img/astrologia.jpg" %}" alt="astrologia" style="width:35%;">
+  </body>
+  </html>
     <p><b>Astrologia</b> (gr. αστρολογία astrología = άστρον ástron + λόγος lógos, „nauka o gwiazdach”) – wróżbiarstwo polegające na próbach przewidywania przyszłości poszczególnych ludzi i wydarzeń na Ziemi na podstawie położenia ciał niebieskich na nieboskłonie</p>
 {% endblock %}
