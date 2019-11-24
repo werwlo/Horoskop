@@ -1,7 +1,27 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
     <h1>AUTORZY</h1>
+    <!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <meta name="nika.jpg" content="width=device-width, initial-scale=1">
+  <meta name="kornelia.jpg" content="width=device-width, initial-scale=1">
+  <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+  <body>
+  <img src="{% static "img/nika.jpg" %}" alt="nika" style="width:10%;">
+  <br> </br>
+  <img src="{% static "img/kornelia.jpg" %}" alt="kornelia" style="width:10%;">
+  </body>
+  </html>
+
 
     <p>Autorzy strony: K.G. & W.W.<br>
     2019 All Rights Reserved</p>
