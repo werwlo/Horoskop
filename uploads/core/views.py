@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.core.files.storage import FileSystemStorage
 from scipy import stats
 
@@ -66,8 +67,6 @@ def koziorozec(request):
     print('Koziorożec')
     return render(request, 'koziorozec.html')
 
-
-
 def home(request):
     print('Horoskop')
     if request.method == 'POST':
@@ -76,13 +75,6 @@ def home(request):
 
         print(zodiac)
 
-        return render(request, 'horoskopmain.html', {'zodiac': zodiac})
-
-
-        # return render(request, 'data_analysis.html',
-        #               {'result_present': True,
-        #                'results': {'r_table': r_table.to_html(),
-        #                            'p_table': p_table.to_html()},
-        #                'df': df.to_html()})
+        return redirect(zodiac)
 
     return render(request, 'home.html')
