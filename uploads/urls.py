@@ -19,6 +19,5 @@ urlpatterns = [
     url('panna/', views.panna, name='panna'),
     url('waga/', views.waga, name='waga'),
     url('skorpion/', views.skorpion, name='skorpion'),
-    url('strzelec/', views.strzelec, name='strzelec'),
-    url('horoskop/', views.horoskop, name='horoskop')
+    url('strzelec/', views.strzelec, name='strzelec')
 ]
