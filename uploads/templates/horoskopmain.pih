@@ -2,7 +2,7 @@
 {% include 'generator.py' %}
 
 {% block content %}
-    <h1>OTO TWÓJ HOROSKOP</h1>
+    <h1>TWÓJ HOROSKOP NA NADCHODZĄCY MIESIĄC</h1>
 
     <p>
       <indent>
