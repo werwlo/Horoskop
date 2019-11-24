@@ -10,9 +10,9 @@ def about(request):
     print('O astrologii')
     return render(request, 'about.html')
 
-def contact(request):
-    print('Kontakt')
-    return render(request, 'contact.html')
+def authors(request):
+    print('Autorzy')
+    return render(request, 'authors.html')
 
 def koziorozec(request):
     print('Koziorożec')
